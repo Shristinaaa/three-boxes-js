@@ -14,8 +14,8 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="box-container">
+    <div class="container" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <div class="box-container ">
         <h2>Drag any of the boxes</h2>
         <div
           class="box1"
@@ -52,11 +52,7 @@
         </div>
       </div>
 
-      <div
-        class="drop-container"
-        ondrop="drop(event)"
-        ondragover="allowDrop(event)"
-      >
+      <div class="drop-container">
         <h2>Drop box here</h2>
       </div>
     </div>
